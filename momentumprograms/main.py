@@ -3,7 +3,7 @@ import gentable
 import genresult
 
 i = input("Press 1 for making fresh zip files else press 0\n")
-if i == 1:
+if i == '1':
 	gf.genratezips()
 
 w = int(input("Enter week weight "))

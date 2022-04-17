@@ -10,7 +10,7 @@ def last_day_of_month(any_day):
     return next_month - datetime.timedelta(days=next_month.day)
 
 for month in range(1, 13):
-    savedate = last_day_of_month(datetime.date(2017, month, 1))
+    savedate = last_day_of_month(datetime.date(2015, month, 1))
     savedatestr = str(savedate)
     try:
         bhav = get_price_list(savedate)
