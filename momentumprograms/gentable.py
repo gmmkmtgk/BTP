@@ -1,23 +1,23 @@
 import pandas as pd
 
 def gen():
-    df1 = pd.read_csv (r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Prices/today.csv')
+    df1 = pd.read_csv (r'../Prices/today.csv')
     df1 = df1.loc[:, 'SYMBOL':'CLOSE']
 
 
-    df2 = pd.read_csv (r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Prices/week.csv')
+    df2 = pd.read_csv (r'../Prices/week.csv')
     df2 = df2.loc[:, 'SYMBOL':'CLOSE']
 
-    df3 = pd.read_csv (r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Prices/month.csv')
+    df3 = pd.read_csv (r'../Prices/month.csv')
     df3 = df3.loc[:, 'SYMBOL':'CLOSE']
 
-    df4 = pd.read_csv (r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Prices/threemonth.csv')
+    df4 = pd.read_csv (r'../Prices/threemonth.csv')
     df4 = df4.loc[:, 'SYMBOL':'CLOSE']
 
-    df5 = pd.read_csv (r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Prices/sixmonth.csv')
+    df5 = pd.read_csv (r'../Prices/sixmonth.csv')
     df5 = df5.loc[:, 'SYMBOL':'CLOSE']
 
-    df6 = pd.read_csv (r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Prices/year.csv')
+    df6 = pd.read_csv (r'../Prices/year.csv')
     df6 = df6.loc[:, 'SYMBOL':'CLOSE']
 
     df1.drop('SERIES', inplace=True, axis=1)
@@ -64,24 +64,5 @@ def gen():
 
 
     return df_inner
-
-# symlst = [] 
-# pricelst = []
-
-# for ind in df_inner.index:
-
-#      s = df_inner['LOW_x'][ind]/df_inner['LOW_y'][ind]
-#      symlst.append(s)
-     
-# df_inner['Value'] = symlst
-# r = df_inner.sort_values(by=['Value'],ascending=False)
-# print(r)
-# print(r.head(100))
-# k = r.head(100)
-# k.to_csv('result.csv')
-# r.to_csv('final.csv')
-# r.to_csv(r'/home/keshav/Desktop/Prices/result.csv')
-
-
 
 

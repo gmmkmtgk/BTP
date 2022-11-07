@@ -15,9 +15,6 @@ def getresult(df_inner,ww,mw,tmw,smw,yw):
         
     df_inner['Value'] = symlst
     r = df_inner.sort_values(by=['Value'],ascending=False)
-    r.to_csv(r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Results'+filename+'.csv')
-    r['SYMBOL'].to_csv(r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Results/Result.csv')
-    # k = pd.read_csv (r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Results/Result.csv')
-    # k = k.iloc[: , 1:]
-    # k.to_csv(r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Results/Result.csv')
+    r.to_csv(r'../Results'+filename+'.csv')
+    r['SYMBOL'].to_csv(r'../Results/Result.csv')
     return r

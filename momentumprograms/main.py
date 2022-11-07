@@ -13,10 +13,8 @@ sm = int(input("Enter sixmonth weight "))
 y = int(input("Enter year weight "))
 
 df_inner = gentable.gen()
-df_inner.to_csv(r'C:/Users/91941/OneDrive/Desktop/AT_MEGA/Tables/Table.csv')
-
+df_inner.to_csv(r'../Tables/Table.csv')
 o = genresult.getresult(df_inner,w,m,tm,sm,y)
 
 print(o)
-#print(o.loc['SYMBOL'])
 

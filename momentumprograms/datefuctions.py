@@ -57,12 +57,3 @@ def genraldate(k):
     if calendar.day_name[r.weekday()] == 'Sunday':
         return r + timedelta(days=-2)
     return r
-
-# print(today())
-# print(week())
-# print(month())
-# print(threemonth())
-# print(sixmonth())
-# print(year())
-#print(datetime.datetime.today().weekday())
-
