@@ -12,4 +12,4 @@ df2 = pd.read_csv (r'../Results/Result.csv')
 df_inner = pd.merge(df2, df1,on='SYMBOL', how='inner')
 print(df_inner['SYMBOL'])
 
-df_inner['SYMBOL'].to_csv(r'../Results/'+filename+'.csv')
+df_inner['SYMBOL'].to_csv(r'../'+filename+'.csv')
